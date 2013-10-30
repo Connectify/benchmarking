@@ -116,16 +116,16 @@ class Test(unittest.TestCase):
 
     def test_10MBIncreasingLoss(self):
         try:
-            launch_speedtest('test-params-IncreasingLoss.csv',
-                             'test-urls-10MB.json')
+            self.launch_speedtest('test-params-IncreasingLoss.csv',
+                                  'test-urls-10MB.json')
         except Exception, e:
             print '*** Caught exception: %s: %s' % (e.__class__, e)
             traceback.print_exc()
             sys.exit(1)
 
     def test_QUIC_vs_HTTP(self):
-        test_10MBIncreasingLatency()
-        test_10MBIncreasingLoss()
+        self.test_10MBIncreasingLatency()
+        self.test_10MBIncreasingLoss()
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
