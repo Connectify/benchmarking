@@ -1,4 +1,4 @@
-benchmarking
+Protocol Benchmarking
 ============
 
 These scripts provide an easy way to benchmark different protocols, over different network conditions, while reporting the results to a folder in Google Drive.
