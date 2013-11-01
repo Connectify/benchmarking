@@ -123,9 +123,19 @@ class Test(unittest.TestCase):
             traceback.print_exc()
             sys.exit(1)
 
+    def test_10MBIncreasingSpeed(self):
+        try:
+            self.launch_speedtest('test-params-IncreasingSpeed.csv',
+                                  'test-urls-10MB.json')
+        except Exception, e:
+            print '*** Caught exception: %s: %s' % (e.__class__, e)
+            traceback.print_exc()
+            sys.exit(1)
+
     def test_QUIC_vs_HTTP(self):
         self.test_10MBIncreasingLatency()
         self.test_10MBIncreasingLoss()
+        self.test_10MBIncreasignSpeed()
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
