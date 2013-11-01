@@ -1,0 +1,14 @@
+diff --git a/net/tools/quic/quic_server_bin.cc b/net/tools/quic/quic_server_bin.cc
+index a71cbcf..e4cf568 100644
+--- a/net/tools/quic/quic_server_bin.cc
++++ b/net/tools/quic/quic_server_bin.cc
+@@ -50,7 +50,8 @@ int main(int argc, char *argv[]) {
+   base::AtExitManager exit_manager;
+ 
+   net::IPAddressNumber ip;
+-  CHECK(net::ParseIPLiteralToNumber("::", &ip));
++  //CHECK(net::ParseIPLiteralToNumber("::", &ip));
++  CHECK(net::ParseIPLiteralToNumber("0.0.0.0", &ip));
+ 
+   net::tools::QuicServer server;
+ 

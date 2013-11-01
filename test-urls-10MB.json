@@ -1,0 +1,15 @@
+{
+  "description": "List of pages (URLs) for measuring quic performance using standalone quic client and server. These URLs are for testing only and are provided without guarantee.",
+  "pages": [
+    {
+      "url": "http://quic-server/test/file-100K.dat",
+      "why": "A medium file, about 100K Bytes.",
+      "enabled": "0"
+    },
+    {
+      "url": "http://quic-server/test/file-10M.dat",
+      "why": "A large file, about 10M Bytes.",
+      "enabled": "1"
+    }
+  ]
+}

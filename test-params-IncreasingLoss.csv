@@ -1,0 +1,7 @@
+nic1_down_mbps,nic1_up_mbps,nic1_latency,nic1_dropped
+5,5,80,0
+5,5,80,0.1
+5,5,80,0.5
+5,5,80,1.0
+5,5,80,3.0
+5,5,80,5.0
